@@ -1,0 +1,10 @@
+server:
+  port: 8082
+backend:
+  schema: http
+  host: localhost
+  port: 8080
+  prefix: /v1
+  path:
+    user: user
+    token: token

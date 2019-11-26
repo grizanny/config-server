@@ -1,0 +1,19 @@
+# Native (for all)
+spring:
+  application:
+    name: ${ES_CONFIG_SERVER_HOST:config-server}
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/configuration
+      fail-fast: true
+  security:
+    user:
+      name: root
+      password: admin_password
+
+server:
+  port: ${ES_CONFIG_SERVER_PORT:8888}

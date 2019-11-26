@@ -1,0 +1,2 @@
+server:
+  port: ${ES_AUTH_PROVIDER_PORT:8081}
